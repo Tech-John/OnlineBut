@@ -1,0 +1,200 @@
+    @import url("https://fonts.googleapis.com/css2?Family=Jura:wght@300;400;500;600;700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?Family=Jura:wght@300;400;500;600;700& family.Poppins:@100;200;300;400;500;600;700;800;900&display=swap");
+    /*Common Style*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+        outline: none;
+        font-family: "Jura", sans-serif;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('images/landing/UCOU0613.JPG');
+    }
+    /*End of Common Styles*/
+    /*Mouse Circle*/
+    
+    .mouse-circle {
+        border-radius: 50%;
+        position: fixed;
+        z-index: 300;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+    
+    .mouse-circle {
+        width: 6rem;
+        height: 6rem;
+        border: 0.1rem solid blueviolet;
+        Animation: mouse-CircleAnim 10s infinite linear;
+    }
+    
+    @keyframes mouse-CircleAnimination {
+        0% {
+            width: 6rem;
+            height: 6rem;
+        }
+        27% {
+            width: 8rem;
+            height: 8rem;
+        }
+        35% {
+            width: 4rem;
+            height: 4rem;
+        }
+        70% {
+            width: 8rem;
+            height: 8rem;
+        }
+        100% {
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+    
+    .mouse-dot {
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: aqua;
+        animation: mouseDotAnim 10s infinite linear;
+    }
+    
+    @keyframes mouseDotAnim {
+        0% {
+            width: .5rem;
+            height: 5rem;
+        }
+        55% {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        100% {
+            width: 0.5rem;
+            height: 0.5rem;
+        }
+    }
+    /*End of Mouse Circle */
+    /*Page BG*/
+    
+    html {
+        background: url(images/IMG_6481.JPG) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-clip-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+    }
+    /*End of Page BG*/
+    /*Section 1*/
+    
+    .setion-1 {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+    /*Logo*/
+    
+    .logo {
+        position: absolute;
+        top: 2rem;
+        left: 5rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    /*End of Logo*/
+    /*Animination Circle*/
+    
+    .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, fr);
+        grid-template-rows: repeat(2, fr);
+    }
+    
+    .circle {
+        width: 22rem;
+        height: 22rem;
+        border-radius: 50%;
+        align-self: center;
+        justify-self: cover;
+        opacity: 0.5;
+        position: relative;
+    }
+    
+    .circle-1 {
+        background: url(images/landing/bag.JPG) center no-repeat;
+        background-size: cover;
+        background-clip: content-box;
+        border: 0.5rem dotted red;
+    }
+    
+    .circle-2 {
+        background: url(images/landing/IMG_6461.JPG) center no-repeat;
+        background-size: cover;
+        background-clip: content-box;
+        border: 0.5rem dashed yellow;
+    }
+    
+    .circle-3 {
+        background: url(images/landing/IMG_6463.JPG) center no-repeat;
+        background-size: cover;
+        background-clip: content-box;
+        border: 1rem double indigo;
+    }
+    
+    .circle-4 {
+        background: url(images/landing/IMG_6468.JPG) center no-repeat;
+        background-size: cover;
+        background-clip: content-box;
+        border: .7rem double white;
+    }
+    
+    .main-circle {
+        width: 55rem;
+        height: 55rem;
+        position: absolute;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    
+    .main-circle img {
+        mix-blend-mode: color-dodge;
+    }
+    /*End of Animination Circle*/
+    /*Featured Text*/
+    
+    .featured-text {
+        font-size: 2rem;
+        color: white;
+        text-transform: uppercase;
+        width: 0;
+        word-wrap: break-word;
+        line-height: 3.5;
+        position: sticky;
+        top: 0;
+    }
+    
+    .featured-text-1 {
+        margin: 0 10rem 0 auto;
+    }
+    
+    .featured-text-2 {
+        margin: 0 auto 0 10rem;
+    }
+    /*End of Featured Text*/
+    /*End of Section 1*/
